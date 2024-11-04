@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Exams Plus SQL Database Documentation</title>
+    <style>
+        /* General reset and body styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Header and footer styles */
+        header, footer {
+            background-color: #005f99;
+            color: #fff;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+
+        /* Main content area */
+        main {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        /* Section and heading styles */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #005f99;
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 5px solid #005f99;
+            padding-left: 10px;
+        }
+        
+        /* Paragraph and list styles */
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Industry Exams Plus SQL Database Documentation</h1>
+    <p>Overview and insights into the SQL database powering Industry Exams Plus</p>
+</header>
+
+<main>
+    <section>
+        <h2>Introduction</h2>
+        <p>This repository provides documentation for the SQL database developed for <strong>Industry Exams Plus</strong>, a platform designed to help users prepare for industry-specific exams through practice tests, study guides, and career resources. The database structure is tailored to manage user data, exam categories, questions, answers, and performance analytics.</p>
+    </section>
+
+    <section>
+        <h2>Database Purpose and Scope</h2>
+        <p>The primary objective of this SQL database is to efficiently store and retrieve data for various functionalities within the Industry Exams Plus website, including:</p>
+        <ul>
+            <li>Managing user profiles, registration, and authentication</li>
+            <li>Organizing industry-specific exams, categories, and subcategories</li>
+            <li>Storing questions, answer options, and correct answers for each test</li>
+            <li>Tracking user performance and progress analytics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technical Overview</h2>
+        <p>The database was developed using <strong>MySQL</strong>, chosen for its reliability, scalability, and wide support. Key design considerations included normalization to reduce redundancy, indexing for quick data retrieval, and careful handling of relationships between tables to maintain data integrity.</p>
+    </section>
+
+    <section>
+        <h2>Database Structure</h2>
+        <p>Below is a high-level summary of the core tables and their relationships:</p>
+        <ul>
+            <li><strong>Users</strong>: Stores user account information, roles, and permissions.</li>
+            <li><strong>Exams</strong>: Contains exam categories and industry-specific sections.</li>
+            <li><strong>Questions</strong>: Holds questions linked to specific exams, including difficulty level and metadata.</li>
+            <li><strong>Answers</strong>: Stores answer options, correct answers, and links to corresponding questions.</li>
+            <li><strong>Results</strong>: Tracks user responses, scores, and performance for each test taken.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Challenges and Solutions</h2>
+        <p>During the database design, some key challenges included ensuring data consistency across complex relationships and optimizing query performance. Solutions involved careful indexing, use of foreign keys to enforce referential integrity, and regularly reviewing query performance to make adjustments where necessary.</p>
+    </section>
+
+    <section>
+        <h2>Future Enhancements</h2>
+        <p>Future updates may include additional analytics for deeper insights into user performance trends, enhanced security measures, and options for real-time data reporting.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Industry Exams Plus | SQL Database Documentation</p>
+</footer>
+
+</body>
+</html>
